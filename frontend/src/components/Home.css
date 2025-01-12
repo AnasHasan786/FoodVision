@@ -1,0 +1,221 @@
+.home-container {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.image {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(100%);
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.overlay-heading {
+    position: absolute;
+    top: 8%; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 2;
+    max-width: 85%;
+    line-height: 1.3;
+    text-align: center;
+}
+
+@keyframes fadeInSlideDown {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.thought {
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.4rem;
+    max-width: 75%;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.specials, .reviews {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    animation: fadeInSection 2s ease-in;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices (320px – 480px) */
+@media (max-width: 480px) {
+    .overlay-heading {
+        top: 5%; 
+        font-size: 2rem;
+        max-width: 90%;
+    }
+
+    .thought {
+        top: 10%;
+        font-size: 1rem;
+        max-width: 85%;
+    }
+
+    .specials {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .image {
+        height: 60vh;
+    }
+}
+
+/* Tablets/iPads (480px – 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+    .overlay-heading {
+        top: 5%; 
+        font-size: 2.8rem;
+        max-width: 90%;
+    }
+
+    .thought {
+        top: 10%; 
+        font-size: 1.1rem;
+        max-width: 85%;
+    }
+
+    .specials {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        height: 70vh;
+    }
+}
+
+/* Laptops/Small Screens (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .overlay-heading {
+        font-size: 5rem; 
+        top: 5%; 
+        max-width: 85%;
+        line-height: 1.2; 
+    }
+
+    .thought {
+        font-size: 1.5rem; 
+        top: 16%; 
+        max-width: 85%;
+        line-height: 1.5;
+    }
+
+    .specials {
+        font-size: 2rem;
+    }
+
+    .image {
+        height: 80vh; 
+    }
+}
+
+/* Desktops/Large Screens (1024px – 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .overlay-heading {
+        font-size: 5.5rem;
+        top: 10%; 
+        max-width: 75%;
+    }
+
+    .thought {
+        font-size: 1.4rem;
+        top: 19%;
+        max-width: 75%;
+    }
+
+    .specials {
+        font-size: 2rem;
+    }
+
+    .image {
+        height: 70vh;
+    }
+}
+
+/* Extra-large Devices (1200px and above) */
+@media (min-width: 1200px) {
+    .overlay-heading {
+        font-size: 7rem;
+        top: 8%;
+        max-width: 70%;
+    }
+
+    .thought {
+        font-size: 1.6rem;
+        top: 20%;
+        max-width: 70%;
+    }
+
+    .specials {
+        font-size: 2rem;
+    }
+
+    .image {
+        height: 90vh;
+    }
+}

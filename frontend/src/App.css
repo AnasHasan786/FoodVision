@@ -1,0 +1,33 @@
+  html, body, #root {
+    height: 100%;
+    overflow: auto; 
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff6347; 
+  border-radius: 100px; 
+  border: 3px solid #1a1a1a; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4500; 
+}
+
+
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #ff6347 #1a1a1a; 
+}

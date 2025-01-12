@@ -1,0 +1,194 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: black;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mission-statement, .video-demo {
+  flex: 1;
+  min-width: 300px;
+}
+
+.mission-statement h2, .video-demo h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.mission-statement p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+}
+
+.video-demo video {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.learn-more-btn {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.learn-more-btn button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn button:hover {
+  background-color: #ff4757;
+}
+
+/* Mobile View (Max-width 768px) */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mission-statement h2, .video-demo h2 {
+    font-size: 20px;
+  }
+
+  .mission-statement p {
+    font-size: 15px;
+    text-align: center; 
+  }
+
+  .video-demo video {
+    max-width: 100%;
+    margin: 0 auto; 
+  }
+
+  .learn-more-btn button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Tablet View (Min-width 768px and Max-width 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .mission-statement h2, .video-demo h2 {
+    font-size: 22px;
+  }
+
+  .mission-statement p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .video-demo video {
+    max-width: 90%;
+  }
+
+  .learn-more-btn button {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+}
+
+/* Small Desktop View (Min-width 1024px and Max-width 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .about-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .mission-statement h2, .video-demo h2 {
+    font-size: 24px;
+  }
+
+  .mission-statement p {
+    font-size: 16px;
+  }
+
+  .video-demo video {
+    max-width: 80%;
+  }
+
+  .learn-more-btn button {
+    padding: 14px 28px;
+    font-size: 17px;
+  }
+}
+
+/* Large Desktop View (Min-width 1200px) */
+@media (min-width: 1200px) {
+  .mission-statement h2, .video-demo h2 {
+    font-size: 26px;
+  }
+
+  .mission-statement p {
+    font-size: 18px;
+  }
+
+  .about-content {
+    gap: 100px;
+  }
+
+  .video-demo video {
+    max-width: 500px;
+  }
+
+  .learn-more-btn button {
+    padding: 16px 25px;
+    font-size: 18px;
+  }
+}
+
+/* Extra Large Desktop View (Min-width 1400px) */
+@media (min-width: 1400px) {
+  .about-content {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .mission-statement h2, .video-demo h2 {
+    font-size: 28px;
+  }
+
+  .mission-statement p {
+    font-size: 18px;
+  }
+
+  .video-demo video {
+    max-width: 600px;
+  }
+
+  .learn-more-btn button {
+    padding: 10px 25px;
+    font-size: 20px;
+  }
+}
